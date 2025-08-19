@@ -16,3 +16,28 @@ This section outlines the roles within our project team and their key responsibi
 
 - **QA Engineer**  
   Ensures backend functionalities are thoroughly tested through manual and automated testing, maintaining quality, performance, and compliance with requirements.
+
+## Technology Stack
+
+This project leverages modern tools and frameworks to ensure scalability, performance, and maintainability. Below is a breakdown of each technology and its role in the project:
+
+- **Django**  
+  A high-level Python web framework used to build the RESTful API and handle server-side logic.  
+
+- **Django REST Framework (DRF)**  
+  Provides powerful tools for creating, managing, and documenting RESTful APIs efficiently.  
+
+- **PostgreSQL**  
+  A robust relational database system used for reliable data storage and management.  
+
+- **GraphQL**  
+  Enables flexible and efficient querying of data, allowing clients to request only the information they need.  
+
+- **Celery**  
+  Handles asynchronous tasks such as background job processing, notifications, and scheduled tasks.  
+
+- **Redis**  
+  An in-memory data store used for caching, session management, and as a Celery message broker.  
+
+- **Docker**  
+  Provides containerization for consistent
