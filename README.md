@@ -42,7 +42,7 @@ This project leverages modern tools and frameworks to ensure scalability, perfor
 - **Docker**  
   Provides containerization for consistent
 
-  ## Database Design
+## Database Design
 
 The database is structured around five core entities: Users, Properties, Bookings, Payments, and Reviews. Below is a breakdown of each entity, its key fields, and relationships with other entities.
 
