@@ -100,3 +100,37 @@ This project replicates core functionalities of an Airbnb-like platform. Below a
 - **Data Optimization**  
   Ensures efficient data retrieval and storage through database indexing and query optimization. This keeps the application responsive and scalable as usage grows.  
 
+## API Security
+
+Securing the backend APIs is critical to protect sensitive data, maintain trust, and ensure reliable system operations. The following measures will be implemented:
+
+- **Authentication**  
+  Ensures that only verified users can access the system. This protects sensitive data (e.g., user profiles, bookings, and payment details) from unauthorized access.  
+
+- **Authorization**  
+  Controls what actions a user is allowed to perform. For example, property owners can manage their own listings, but not others. This prevents malicious or accidental misuse of data.  
+
+- **Data Encryption (HTTPS + Password Hashing)**  
+  All communication between the client and server will use HTTPS to prevent eavesdropping. User passwords and sensitive data are stored securely using hashing and encryption techniques to safeguard against breaches.  
+
+- **Rate Limiting & Throttling**  
+  Prevents abuse of the APIs by limiting the number of requests from a single client in a given timeframe. This helps defend against brute-force attacks and ensures fair usage.  
+
+- **Input Validation & Sanitization**  
+  All user inputs will be validated and sanitized to prevent injection attacks (e.g., SQL injection, XSS). This keeps the system safe from malicious data manipulation.  
+
+- **Secure Payments**  
+  Payment-related APIs will integrate with trusted gateways and comply with industry standards (e.g., PCI DSS). This ensures that financial transactions remain safe and fraud-resistant.  
+## CI/CD Pipeline
+
+A Continuous Integration and Continuous Deployment (CI/CD) pipeline automates the process of building, testing, and deploying the application. This ensures that changes to the codebase are validated early, reducing bugs, speeding up delivery, and maintaining high-quality standards.
+
+### Why CI/CD is Important
+- **Faster Development Cycles** – Automates testing and deployment, allowing developers to release updates quickly and confidently.  
+- **Improved Code Quality** – Automatically runs tests and checks on every commit, ensuring issues are caught before reaching production.  
+- **Consistency & Reliability** – Provides a repeatable process for deploying changes across different environments (development, staging, production).  
+
+### Tools
+- **GitHub Actions** – For automating workflows such as running tests, linting, and deployments.  
+- **Docker** – Ensures consistent environments across development, testing, and production using containerization.  
+  
