@@ -49,9 +49,9 @@ The database is structured around five core entities: Users, Properties, Booking
 ### Users
 - **Fields:** id, name, email, password_hash, created_at  
 - **Relationships:**  
-  - A user can own multiple properties.  
-  - A user can make multiple bookings.  
-  - A user can leave multiple reviews.  
+  - A user (as an owner) can own multiple properties.  
+  - A user (as an customer) can make multiple bookings.  
+  - A user (as an customer) can leave multiple reviews.  
 
 ### Properties
 - **Fields:** id, title, description, location, price, owner_id (FK → Users)  
