@@ -1,7 +1,7 @@
 # airbnb-clone-project
 AirBnB Clone project for ALX Prodev 
 
-# Team Roles
+## Team Roles
 
 This section outlines the roles within our project team and their key responsibilities. Each role contributes to ensuring the success, quality, and reliability of the project.
 
@@ -41,3 +41,40 @@ This project leverages modern tools and frameworks to ensure scalability, perfor
 
 - **Docker**  
   Provides containerization for consistent
+
+  ## Database Design
+
+The database is structured around five core entities: Users, Properties, Bookings, Payments, and Reviews. Below is a breakdown of each entity, its key fields, and relationships with other entities.
+
+### Users
+- **Fields:** id, name, email, password_hash, created_at  
+- **Relationships:**  
+  - A user can own multiple properties.  
+  - A user can make multiple bookings.  
+  - A user can leave multiple reviews.  
+
+### Properties
+- **Fields:** id, title, description, location, price, owner_id (FK → Users)  
+- **Relationships:**  
+  - A property belongs to one user (the owner).  
+  - A property can have many bookings.  
+  - A property can have many reviews.  
+
+### Bookings
+- **Fields:** id, user_id (FK → Users), property_id (FK → Properties), start_date, end_date, status  
+- **Relationships:**  
+  - A booking belongs to one user.  
+  - A booking belongs to one property.  
+  - A booking can have one payment.  
+
+### Payments
+- **Fields:** id, booking_id (FK → Bookings), amount, payment_date, status  
+- **Relationships:**  
+  - A payment is linked to one booking.  
+
+### Reviews
+- **Fields:** id, user_id (FK → Users), property_id (FK → Properties), rating, comment, created_at  
+- **Relationships:**  
+  - A review belongs to one user.  
+  - A review belongs to one property.  
+
