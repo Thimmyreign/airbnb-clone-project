@@ -76,5 +76,27 @@ The database is structured around five core entities: Users, Properties, Booking
 - **Fields:** id, user_id (FK → Users), property_id (FK → Properties), rating, comment, created_at  
 - **Relationships:**  
   - A review belongs to one user.  
-  - A review belongs to one property.  
+  - A review belongs to one property.
+
+## Feature Breakdown
+
+This project replicates core functionalities of an Airbnb-like platform. Below are the main features and how they contribute to the overall system:
+
+- **User Management**  
+  Provides secure user registration, authentication, and profile management. This ensures only authorized users can access the system while giving each user a personalized experience.  
+
+- **Property Management**  
+  Allows property owners to create, update, and manage property listings. Users can also retrieve property details to explore available accommodations.  
+
+- **Booking System**  
+  Enables users to reserve properties and manage their booking details (such as dates and status). This is central to connecting guests with property owners.  
+
+- **Payment Processing**  
+  Integrates a reliable payment system for handling transactions. It records payment details to ensure secure and traceable bookings.  
+
+- **Review System**  
+  Lets users leave reviews and ratings for properties. This builds trust and provides feedback for both owners and potential guests.  
+
+- **Data Optimization**  
+  Ensures efficient data retrieval and storage through database indexing and query optimization. This keeps the application responsive and scalable as usage grows.  
 
